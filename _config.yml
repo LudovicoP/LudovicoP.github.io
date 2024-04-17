@@ -12,7 +12,7 @@ title                    : "Ludovico's Home Page"
 title_separator          : "-"
 name                     : &name "Ludovico Amedeo Panariello"
 description              : &description "Personal Description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://LudovicoP.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "LudovicoP/LudovicoP.github.io"
 
@@ -21,7 +21,7 @@ repository               : "LudovicoP/LudovicoP.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Profile_pic.png"
+  avatar           : "/images/Profile_pic.png"
   name             : "Ludovico Amedeo Panariello"
   pronouns         : # example: "she/her"  
   bio              : "Stats & ML enthusiast"
