@@ -94,6 +94,8 @@ yandex_site_verification :
 # Social Sharing
 twitter:
   username               : &twitter
+linkedin:
+  username               : ludovicopanariello
 facebook:
   username               :
   app_id                 :
