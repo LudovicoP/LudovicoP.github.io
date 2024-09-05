@@ -30,4 +30,7 @@ redirect_from:
 ### 📊 Ulixes Capital
 
 ## 💻 Personal Projects
+### 🏦 Credit Scoring Analysis
+### 🏘️ AirBnB Data Analysis
+### 🧾 Computational Accounting applied NLP
 ### 📼 CompVis for Pysical Stores
