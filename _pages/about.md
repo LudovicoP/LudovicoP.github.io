@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![Illustrationn of martingale distribution](/images/martingales.png){: .align-right width="300px"}
+![Illustration of martingale distribution](/images/martingales.jpg){: .align-right width="300px"}
 
 🧑🏻‍💻 I'm a second year undergraduate student at Bocconi University in Economics Management and Computer Science.
 
