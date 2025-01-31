@@ -9,7 +9,7 @@ redirect_from:
 
 ![Illustration of martingale distribution](/images/martingales.jpg){: .align-right width="300px"}
 
-🧑🏻‍💻 I'm a second year undergraduate student at Bocconi University in Economics Management and Computer Science.
+🧑🏻‍💻 I'm a third year undergraduate student at Bocconi University in Economics Management and Computer Science.
 
 🔬 My research interests are inbetween Computational Statistics and Machine Learning
 
@@ -28,9 +28,12 @@ redirect_from:
 ## 🌱 Bocconi Sustainable Innovation - Tech Division
 ### 🛰️ AgricSat
 ### 📊 Ulixes Capital
+### 🗞️ Baysian Marketing Mix Modelling
 
 ## 💻 Personal Projects
 ### 🏦 Credit Scoring Analysis
 ### 🏘️ AirBnB Data Analysis
+### 👔 Cerniture Model on IBM Data
+### 📈 SimAnn on Highly Non Linear Function
 ### 🧾 Computational Accounting applied NLP
 ### 📼 CompVis for Pysical Stores
