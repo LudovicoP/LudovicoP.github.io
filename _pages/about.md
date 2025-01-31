@@ -33,7 +33,7 @@ redirect_from:
 ## 💻 Personal Projects
 ### 🏦 Credit Scoring Analysis
 ### 🏘️ AirBnB Data Analysis
-### 👔 Cerniture Model on IBM Data
+### 👔 Churn Model on IBM Data
 ### 📈 SimAnn on Highly Non Linear Function
 ### 🧾 Computational Accounting applied NLP
 ### 📼 CompVis for Pysical Stores
