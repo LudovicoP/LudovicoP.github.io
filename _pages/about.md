@@ -9,17 +9,23 @@ redirect_from:
 
 ![Illustration of martingale distribution](/images/martingales.jpg){: .align-right width="300px"}
 
-🧑🏻‍💻 I'm a second year undergraduate student at Bocconi University in Economics Management and Computer Science.
+🧑🏻‍💻 I'm a Postgraduate student at Imperial College London in Statistical Finance
 
-🔬 My research interests are inbetween Computational Statistics and Machine Learning
+🔬 My research interests are inbetween Computational and Applied Statistics
 
-📚 I'm currently deeping my knowledge on DL and Reinforcement Learning
+📚 I'm currently deeping my knowledge on quantitative finance
 
 ⚽️ I'm a Football and F1 enthusiast
 
 # Selected Experience
 
-## 📡 Eolo S.p.A.
+## 🗞️ RCS Mediagroup S.p.A.
+
+## 📕 Undergraduate Thesis - Bayesian Methods for Racing Dynamics
+
+## 📊 BIDSA (Bocconi Institute for Data Science and Analytics)
+
+## 🌍 LEAP (Laboratory for Effective Anti-poverty Policies)
 
 ## 🤖 Bocconi Students for Machine Learning - Research Division
 ### 🦒 Darwin Simulation
@@ -27,7 +33,7 @@ redirect_from:
 
 ## 🌱 Bocconi Sustainable Innovation - Tech Division
 ### 🛰️ AgricSat
-### 📊 Ulixes Capital
+### 💵 Ulixes Capital
 
 ## 💻 Personal Projects
 ### 📼 CompVis for Pysical Stores
