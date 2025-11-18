@@ -1,0 +1,73 @@
+LUDOVICO AMEDEO PANARIELLO
+
+ludovico.panariello@icloud.com
++39 3475987272 | www.linkedin.com/in/ludovicopanariello | https://ludovicop.github.io
+
+EDUCATION
+Imperial College London
+London, UK
+Incoming student at MSc Statistical Finance.
+09/2025 – 09/2026
+o Core modules: Survival Models, Simulation Models, Adv Statistical Finance, Deep Learning, Adv Stochastic Processes.
+o Recipient of GREAT Scholarship
+The University of Texas at Austin – McCombs Exchange Program
+Austin, TX
+Selected on merit.
+01/2025 – 05/2025
+o Core (Graduate) modules: Bayesian Statistics (PhD level), Stochastic Processes, Time Series Forecasting, Optimization
+Bocconi University
+Milan, Italy
+BSc in Economics, Management and Computer Science
+09/2022 – 06/2025
+o Graduated with 110 cum laude with Full merit & income scholarship (ISU Bocconi)
+o WallStreetPrep: Completed Financial Modelling and Markets and Sales & Trading
+o Core modules: Advanced Mathematics and Statistics, Linear Algebra, Game Theory, ML, Econometrics, Corp Finance
+o Selected on merit to attend workshops in Dubai DIFC with Rothchild, Natixis, Moody’s and Majid Al Futtaim Trust
+o Curricular projects:
+o Credit Risk Analysis: Built an ML model in Python to predict credit default, with published results.
+o Optimization: Applied SimAnn to minimize a non-linear 3D function, 97% convergence to global minimum.
+o Thesis: Developed a Bayesian model in STAN to quantify online latent tire degradation during races using
+fastf1 data. Published a 30 pages paper on methodology and results.
+WORK EXPERIENCE
+RCS Mediagroup – One of the world’s leading multimedia publishing group
+Milan, Italy
+Data Scientist intern
+05/2025 – Present
+o Built a probabilistic pipeline to link cookies via clustering and FAISS-based similarity on Vertex AI embeddings.
+o Created a system for detecting trending topics through real-time article clustering and semantic analysis.
+o Co-developed a RAG system using Gemini and hybrid vector search to power natural language search over 200+ years of
+Corriere archives (text, PDFs, images, videos); showcased at Google Cloud Next '25.
+BIDSA – Bocconi Institute for Data Science and Analytics
+Milan, Italy
+Research Assistant for Prof Omiros Papaspiliopoulos and Pieralberto Guarniero
+05/2023 – 06/2025
+o Research on Small Area Estimation, microsimulation technology (CO, GREGWT, RW) and variational inference
+o TA at Data Science Summer School (50 students), taught unsupervised learning techniques (PCA, clustering, autoencoders)
+LEAP - Laboratory for Effective Anti-poverty Policies
+Milan, Italy
+Student research member
+01/2024 - 06/2025
+o Conducted a nighttime homeless census across a Milan district, then produced statistics and policy-relevant forecasts.
+EXTRACURRICOLAR EXPERIENCE
+Bocconi Sustainable Innovation (Student association)
+Milan, Italy
+Head of Tech division (managing 32 students)
+09/2022 – Present
+o Lead project with AGRICSAT startup: coordinated the team to develop a python model to compute indexes for agri sector,
+using satellite data for credit access and risk management.
+o Won the Milan tech race organize by Junction 2023 and well positioned to the final in Helsinki, an event backed by Google,
+Nexi, BCG, Huawei. Developed a RAG implementation to LLM for trustworthiness.
+Bocconi Students for Machine Learning (Student association)
+Milan, Italy
+Analyst – Research and Development division
+09/2023 – Present
+o Engineered a simulation Python ML algorithm to study evolutionary process of natural selection (genetic variation,
+mutation, and environmental effects).
+LANGUES, CODING AND INTERESTS
+Languages: Italian (Native), English (advanced IELTS, 8/9, C2, 09/23), French (B1 – Bocconi Exam)
+Coding Proficiency: Python (Advanced – Pandas, Scikit-Learn, PySpark), C++ (Intermediate) R, SQL, VBA-Excel
+Interests: IMS and ISBA student member, Soccer (intramural team), Skiing on Italian Alps, Formula 1 (Ferrari fan).
+
+I consent to the use of my data in line with applicable
+
+

@@ -1,0 +1,496 @@
+Paper discussion: "Trade Openness and Income
+Inequality: New Empirical Evidence"
+Federico Giorgi - 3197626 - federico.giorgi@studbocconi.it
+Filippo Grandoni - 3187864 - filippo.grandoni@studbocconi.it
+Ludovico Panariello - 3192212 - ludovico.panariello@studbocconi.it
+Lorenzo Ravera - 3200788 - lorenzo.ravera@studbocconi.it
+July 1, 2024
+Abstract
+This paper has the ambitious aim of studying, deeply understanding and highlighting the crucial feature deriving by the paper
+Trade Openness and Income Inequality: New Empirical Evidence - by Florian Dorn, Clemens Fuest, Niklas Potrafke.
+The entire work of analysis, deep study and enhancement of knowledge was supported by the great availability of Professors by
+Florian Dorn, Clemens Fuest, Niklas Potrafke, who through various interviews have helped us to understand their point of
+view as authors, and deeply reviewing the great prompts given by the papers. For this reason we want to express them our
+sincere appreciation.
+
+Contents
+Theoretical question and theoretical model
+
+2
+
+Estimation methodology, variables and country sub-samples
+
+2
+
+Descriptive statistics
+Trade openness and income inequality across countries . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Trends across samples and countries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+2
+2
+
+Empirical Strategy
+OLS Panel FE Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2SLS Panel IV Model & Endogeneity Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+3
+3
+
+Results Analysis
+Baseline results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Subsample results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Outliers and transition countries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+3
+3
+4
+
+Limits and further analysis
+
+4
+
+Theoretical question and theoretical
+model
+The paper by Florian Dorn, Clemens Fuest and Niklas
+Potrafke examines the relationship between trade
+openness and income inequality, and explores how
+it changes across different types of countries: developing, developed, and transition countries.
+Their analysis is based on the Heckscher-Ohlin (HO)
+model (Ohlin, 1933) and the Stolper-Samuelson theorem (Stolper and Samuelson, 1941). The HO model
+suggests that trade openness affects income inequality based on a country’s factors of production and
+their dependence on labor or capital. Countries specialize in goods that use their abundant factors and
+export them. The Stolper-Samuelson theorem predicts
+that trade raises returns for abundant factors used in
+export production and lowers returns for scarce factors. In developed nations with abundant capital and
+skilled labor, trade can increase income inequality by
+moving wages concentration towards the top. Conversely, in developing countries where unskilled labor
+is abundant, trade can decrease income inequality by
+boosting these wages. However, several studies have
+pointed out limitations of the standard HO model
+implications; moreover also the empirical evidence is
+mixed and hardly reports causal effects.
+
+Estimation methodology, variables
+and country sub-samples
+The study used unbalanced panel data from 139
+countries in the period 1970-2014, following the
+literature the data are averaged over five years in nine
+periods between 1970 and 2014.
+To measure income inequality, it was used the
+Gini household income inequality indices of Solt’s
+(2016) Standardized World Income Inequality
+Database (SWIID, v5.1). SWIID provides standardized
+Gini income inequality measures for market and net
+outcomes, allowing comparisons of income inequality
+before and after taxes and over time. To measure
+trade openness, it was used the sum of imports and
+exports as a share of GDP.
+Moreover they included different control variables: real GDP per capita, to control for any
+distributional effect due to different income levels;
+the age dependency ratio and the logarithm of total
+population, in fact, demographic changes influence
+both international trade and the income distribution,
+and the KOF globalization sub-indices for political
+and social globalization and an index for FDIs; in
+fact, trade openness is correlated with migration and
+political globalization.
+The instrumental variable (IV) is predicted openness;
+and is constructed by using a gravity model including
+exogenous large-scale natural disasters in other
+2
+
+countries, since they influence trade openness and the
+per capita income level of countries. Note that they
+controlled for the effect of large-scale natural disasters
+on the income distribution within countries, in order
+to check that the estimated relationship between
+trade and inequality is not driven by the correlation
+between disasters registered in the home country and
+income inequality.
+Full and benchmark samples: they both used
+the full sample of 139 countries, and a sample for high
+and upper middle income countries as a benchmark
+sample, following the World Bank criterion. 57
+countries are classified as lower income countries;
+however because of the concerns about the quality of
+the income inequality data they were excluded from
+the the benchmark sample.
+Development levels: they used sub-samples for the
+most advanced economies and emerging markets
+& developing economies (EMD), according to the
+classification of the International Monetary Fund. 34
+countries are classified as advanced economies and
+are included in the benchmark sample; 105 countries
+make up the sub-sample of EMD economies and are
+taken from both income groups.
+Transition economies: transition economies have
+experienced a large shift in trade openness, which
+was not, however, cushioned by the welfare state. The
+transition toward market economies might therefore
+be an omitted driver of trade openness and inequality
+in transition countries. A sample of the new European
+Union member states from Central and Eastern
+Europe and China contributes to a large extent to
+changes in the global income distribution since the
+fall of the Berlin Wall.
+
+Descriptive statistics
+Trade openness and income inequality
+across countries
+As we can see in Figure 1 , between 2010 and 2014,
+income inequality before taxes (Gini market) is hardly
+correlated with trade openness (0.01), while income
+inequality after taxes and transfers (Gini net) is negatively correlated with trade openness (-0.17). In this
+period, Gini net is on average 9.8 index points lower
+than the Gini market. Moreover, net income inequality
+in open countries is lower than in less open countries
+because of larger welfare states.
+
+Trends across samples and countries
+As we can see in Figure 2 , trade openness and income
+inequality both increased rapidly between the 1980s
+and the 1990s, after the fall of the Berlin Wall, and in
+the 2000s. Gini market and Gini net both decreased
+from the early 2000s in EMD economies; meanwhile, in
+advanced economies, Gini net remained stable while
+Gini market has increased; that indicates a rise of redistribution. Before taxation and transfers, income
+
+inequality is at a similar level in advanced and EMD
+economies; while after taxation and transfers, inequality is much lower in advanced economies than in EMD
+economies.
+There is a positive correlation between the changes
+in trade openness and the market and net income
+inequality in countries of the benchmark sample between the periods 1990-1994 and 2005-2009. There
+are, however, two groups of countries that are the
+key drivers of the linear relationship: on one hand
+Hong Kong, Luxembourg and Singapore are outliers
+regarding trade openness; on the other the transition
+countries in Eastern Europe and China experienced
+a huge opening process and a huge rise in income
+inequality during that time. Excluding the outliers,
+the correlation is almost zero; while after excluding
+outliers and transition countries, the correlation is negative instead.
+
+Empirical Strategy
+OLS Panel FE Model
+To estimate the baseline panel model using OLS, they
+applied the following relationship:
+Yi,τ = β × TRADEi,τ + Θ′ × χi,τ + νi + ντ + ϵi,τ
+
+as predictors. These disasters serve as exogenous
+shocks affecting trade openness due to geographic
+and temporal variations.
+Instrument Construction:
+the predicted trade
+i,j
+openness ω̂t is constructed through a two-step
+process:
+i,j
+
+i,j
+
+• χi,τ is a vector of control variables.
+• νi and ντ are the country and period fixed effects,
+respectively.
+• ϵi,τ is the error term.
+This method exploits within-country variation over
+time, eliminating observable and unobservable
+country-specific time-invariant effects and includes
+fixed time effects to control for period-specific shocks
+that influence multiple countries simultaneously. The
+standard errors are robust to heteroscedasticity and
+are clustered at the country level.
+
+2SLS Panel IV Model & Endogeneity
+Problem
+The trade openness variable may suffer from endogeneity due to omitted variable bias and reverse
+causality. Possible omitted variables include factors
+like competition from low-cost countries prompting
+high-income countries to specialize in high-tech goods.
+Reverse causality can arise from changes in income
+inequality affecting trade policies.
+Gravity Equation as an Instrumental Variable
+(IV): to address the endogeneity of trade openness,
+they used a gravity model as an IV, incorporating
+exogenous natural disasters in foreign countries
+
+i,j
+
+where the variables are defined as follows:
+t
+t ); BOR ] in• Zi,j
+= [ln( POPi · POPj ); ln( DISTi,j
+i,j
+cludes exogenous controls for population, geographic distance, and border adjacency.
+
+• D tj represents large-scale natural disasters in country j.
+t = [ln( FI NDIST ); ln( AREA ); ln( POP ); BOR ]
+• ϕi,j
+i,j
+
+includes variables interacting with D tj such as
+financial remoteness, area, and population.
+t is
+Fixed effects are captured by vi , v j , and vt , and ϵi,j
+the idiosyncratic error.
+In the second step of constructing the IV, they aggret across
+gated predicted bilateral openness values ωi,j
+all bilateral country pairs and years to form the multilateral openness Ωi,t :
+
+• Yi,τ is the income inequality of country i in period
+τ.
+• TRADEi,τ is the trade openness of country i in
+period τ.
+
+i,j
+
+ωt = exp(δ × Di + γ × Zt + λ × (Φt × Di ) + vi + v j + vt + ϵt )
+
+t
+Ωi,t = ∑ ωi,j
+i̸= j
+
+Using this aggregated measure, they derived the instrument for TRADEi,t based on data from 1966 to
+2008, employing one-period lags of predicted openness for robustness.
+
+Results Analysis
+Baseline results
+The average effect of trade openness on Gini income inequality is examined in the full and benchmark sample,
+but the results initially do not suggest a statistically
+significant relationship between trade openness and
+income inequality. Indeed the baseline specifications,
+in line with predictions of the Stolper-Samuelson theorem, which predicts that trade openness increases
+inequality in developed countries and decreases inequality in developing countries, do not confirm that
+trade openness influences equality within countries
+when they used large country samples.
+
+Subsample results
+The analysis focuses on the impact of trade openness
+on income distribution across different income groups
+(deciles), using 2SLS regression with relative net income shares as dependent variables. The findings indicate no significant overall relationship between trade
+openness and income inequality for the entire sample.
+However, a more distinct relationship emerges in a
+3
+
+specific subset (the benchmark sample), revealing that
+trade openness negatively affects the income shares
+of lower income deciles (1 to 7) and positively affects
+those of higher income deciles, although the changes
+are small.
+Significantly, for the upper middle class in the 9th
+decile, an increase in trade openness by ten percentage
+points corresponds to a 0.12 percentage point increase
+in their income share, a finding statistically significant
+at the 5% level. According to the Stolper-Samuelson
+theorem, the results vary by economic development
+level: in developing economies, the poorest benefit
+from trade openness at the expense of higher income
+deciles, whereas in advanced economies, the upper
+middle class gains disproportionately at the expense
+of lower income deciles. The analysis confirms the
+relevance of the instrument used, as indicated by the
+Cragg-Donald Wald F-statistic surpassing critical values in both subsamples.
+
+Outliers and transition countries
+The unconditional relationship between the change
+in trade openness and income inequality seems to be
+driven by outliers in trade openness and by Central
+and Eastern European transition countries (East EU)
+and China. The effect of trade openness on income
+inequality is therefore examined when outliers and
+transition countries are excluded from the analysis:
+• Excluding Singapore as an outlier, the effect of
+trade openness on income inequality becomes
+statistically insignificant across advanced and
+benchmark economies, revealing varied but nonsignificant impacts on different income groups.
+• Excluding China and East EU transition countries
+from the benchmark sample results in smaller
+coefficient estimates for trade openness, which
+are not statistically significant. Without these
+countries, the effect of trade openness on income
+shares becomes negligible or negative when using
+Gini indices as dependent variables. However, after excluding transition countries from the benchmark sample, there was no overall inequalityincreasing effect of trade openness in a large
+sample of advanced and emerging economies,
+consistent with the predictions of the HO model
+(Stolper-Samuelson theorem).
+
+Limits and further analysis
+The paper presents some limits:
+1. Data Quality and Availability: The concern
+about the quality of income inequality data, particularly in less developed countries, is crucial.
+As a fact, the authors are aware of the concerns
+over the reliability of SWIID’s imputed estimates
+in data-poor regions. Moreover, it does not show
+which parts of a country’s income distribution
+gain or lose and cause changes in the Gini index,
+therefore it was also employed the data on relative
+4
+
+net income shares of the Global Consumption and
+Income Project (GCIP) by Lahoti et al. (2016) as a
+measure of post tax and transfer income inequality.
+2. Usage of Export-Import Only as an Indicator of
+Trade Openness: Despite being on of the most
+relevant indicator to measure the openness of an
+economy in the literature, the indicator could be
+expanded by incorporating alternative indicators
+such as trade in services and digital trade flows,
+which are increasingly relevant in today’s global
+economy.
+3. IV Instrument Concern: The chosen instrument,
+natural disasters, poses significant challenges suggesting that the IV estimates may be biased.
+• Violation of exclusion: Direct Impact on
+Income Inequality: For an instrument to be
+valid, it must satisfy the exclusion restriction, meaning it should affect the dependent
+variable (income inequality) only through
+the endogenous regressor (trade openness)
+and not through any other channels. Natural disasters can directly influence income
+inequality. The reconstruction efforts following a disaster often lead to increased economic activity that benefits certain segments
+of the population disproportionately, potentially exacerbating income inequality. Additionally, the ability of a country to implement disaster mitigation measures is correlated with its GDP, introducing further bias.
+Given that natural disasters directly affect
+economic structures and income distribution,
+the exclusion condition is violated.
+• Violation of Exogeneity: Geographic Correlation: The incidence of natural disasters is
+highly correlated with geographic location.
+Countries in certain regions (e.g., the Pacific
+Ring of Fire, hurricane-prone areas) are more
+susceptible to natural disasters. This geographic concentration limits the variability
+of the instrument across the sample, reducing its effectiveness and making it difficult
+to generalize the findings.
+To address these issues, we propose using a
+combination of instruments that are less likely
+to be directly correlated with income inequality
+and provide a broader and more stable source of
+exogenous variation in trade openness. These
+include global technological innovations in trade,
+such as the adoption of e-commerce platforms
+(e.g., Amazon, eBay), which facilitate international trade (i.e. reduction of transaction costs)
+without significantly impacting income inequality.
+The diffusion of these technologies can be tracked
+over time and across countries, providing a robust
+source of exogenous variation. Additionally,
+geopolitical stability indicators, which include
+embargos and trade agreements, and historical
+trade routes can serve as valid instruments,
+influencing trade patterns while being less likely
+
+to affect current income distribution directly.
+They both provide a long-term and stable source
+of variation due to data collected by WTO, IMF
+or WBI. Combining these instruments enhances
+the robustness and credibility of the IV estimates,
+mitigating the weaknesses associated with any
+single instrument.
+Model Specification
+Yi,t = β · TRADEi,t + Θ′ · Xi,t + νi + νt + ϵi,t (1)
+First-Stage Regression
+TRADEi,t = π1 · TECHi,t + π2 · GEOi,t
+
++ π3 · HISTi,t + Θ′ · Xi,t
++ νi + νt + ϵi,t
+
+(2)
+
+where:
+• TECHi,t : Adoption of technological innovations in trade.
+• GEOi,t : Geopolitical stability indicators.
+• HISTi,t : Historical trade routes or agreements.
+Second-Stage Regression
+Use the predicted values of trade openness from
+the first-stage regression to estimate its impact on
+income inequality.
+Testing Instrument Validity
+• Hansen J-Test: Conduct to verify the overidentification of instruments, ensuring they
+are uncorrelated with the error term.
+• Stock-Yogo Test: Perform to check for
+weak instruments, ensuring strong correlation with the endogenous variable.
+Robustness Checks: Exclude regions where the
+instrument might be overly concentrated and
+check if the results hold. Include control variables
+that capture the direct effects of natural disasters
+and political stability on income inequality.
+4. Generalization of Results: The paper rightly acknowledges that the impacts of trade openness on
+income inequality vary significantly across different national contexts, highlighting the importance
+of a nuanced approach in future research. To
+delve deeper into the complexities of how trade
+affects inequality, it is essential to examine the
+interplay between trade policies and various domestic factors such as governance quality and
+labor market dynamics. Future studies could enhance our understanding by incorporating interaction terms in regression analyses, which would
+allow researchers to quantify how specific domestic conditions modify the effects of trade openness. Additionally, adopting a multi-level modeling approach could be beneficial. This method
+would facilitate the examination of data at multi-
+
+ple levels—for instance, individual, regional, and
+national—thereby providing insights into the hierarchical nature of how trade impacts are disseminated across different layers of society.
+5. Refining Econometric Models: The paper employs sophisticated econometric techniques to address the complexities of trade openness and income inequality. Further refinement could include
+dynamic panel data models to account for temporal variations and lagged effects of trade policies.
+Additionally, structural equation modeling (SEM)
+could be used to explore indirect causal pathways,
+potentially revealing how trade influences inequality through intermediary variables such as education and technology adoption. These advanced
+methodologies would enhance the robustness of
+the findings and provide deeper insights into the
+mechanisms at play.
+6. Micro-Level Analysis: The paper’s macro-level
+approach highlights broad trends but may mask
+heterogeneous effects at the micro level. Detailed
+case studies or microdata analysis could illuminate how individual households or specific communities are affected by trade policies. This could
+involve using household survey data to analyze income changes over time within specific segments
+of the population. Such an analysis might reveal differential impacts not just by economic status but also by other demographic characteristics
+such as education level, gender, and occupation.
+Understanding these nuances could inform targeted interventions to mitigate adverse effects on
+vulnerable groups.
+7. Policy Evaluation: The paper hints at the varied effects of trade openness across different economic contexts but stops short of a thorough evaluation of specific trade and domestic policy combinations. Future research could benefit from a
+comparative analysis of policy frameworks across
+countries that successfully manage the inequality effects of trade openness. This might involve
+case studies or cross-country comparisons to draw
+lessons on effective combinations of trade policy
+and domestic interventions, such as social safety
+nets or educational reforms, aimed at distributing
+the gains from trade more equitably.
+Moreover, further analysis could be necessary with respect to temporal dynamics: The lack of examination
+of long-term effects is a significant gap. Longitudinal
+studies or the use of time series analysis could shed
+light on the enduring impacts of trade on inequality,
+providing insights into the dynamics that short-term
+studies might miss.
+
+5
+
+References
+[1] Dorn, D. and Hanson, G. H. The China syndrome: Local labor market effects of import competition in the US,
+American Economic Review, 103(6), 2121–2168, 2013.
+[2] Berg, A., Ostry, J. D., and Zettelmeyer, J. What makes growth sustained?, Journal of Development Economics,
+98(2), 149–166, 2012.
+[3] Borjas, G. J., Freeman, R. B., Katz, L. F., DiNardo, J., and Abowd, J. M. How much do immigration and trade
+affect labor market outcomes?, Brookings Papers on Economic Activity, 1(1), 1–90, 1997.
+[4] Feenstra, R. C., and Hanson, G. H. The impact of outsourcing and high-technology capital on wages: Estimates for
+the United States, 1979–1990, Quarterly Journal of Economics, 114(3), 907–940, 1999.
+[5] Goldberg, P. K., and Pavcnik, N. Distributional effects of globalization in developing countries, Journal of Economic
+Literature, 45(1), 39–82, 2007.
+[6] Jaumotte, F., Lall, S., and Papageorgiou, C. Rising income inequality: Technology, or trade and financial globalization?, IMF Economic Review, 61(2), 271–309, 2013.
+[7] Milanovic, B. Explaining the increase in inequality during transition, Economics of Transition, 7(2), 299–341, 1999.
+[8] Ravallion, M., and Chen, S. China’s (uneven) progress against poverty, Journal of Development Economics, 82,
+1–42, 2007.
+[9] Siddique, A. B. Impact of trade on inequality: New evidence of what, when, and where, CESifo Economic Studies,
+forthcoming, 2021.
+[10] Wood, A. How trade hurt unskilled workers, Journal of Economic Perspectives, 9(3), 57–80, 1995.
+
+Figure 1: Trade openness and Gini income inequality, 2010-2014
+
+Source: SWIID 5.1, World Bank (2017), own calculations. Notes: Figure 1 relates to the full country sample
+within the period 2010-2014. The figure excludes Luxembourg and Singapore as outliers. Transition (excl. East
+EU) relate to former members of the Soviet Union (FSU, non-EU), Western Balkan (non-EU) states, and China.
+Unconditional correlations: β market = 0.005; β net = −0.171∗ (∗ p < 0.1).
+
+Figure 2: Global trends in trade openness and Gini income inequality
+
+Source: SWIID 5.1, World Bank (2017), own calculations. Notes: Trends between the periods 1985-1989 and
+2010-2014. Unweighted mean of balanced samples. In the full sample, 63 of 140 countries have observations in
+all six periods, in the benchmark sample 47 of 82 countries, 24 of 34 countries within the sample of advanced
+economies, and 39 of 106 countries in the sample of emerging and developing economies (EMD).
+
+6
+
+

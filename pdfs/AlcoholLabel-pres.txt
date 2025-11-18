@@ -1,0 +1,168 @@
+Warning Labels on Super Alcohol
+
+Filippo Grandoni, Ludovico Panariello, Alice Finotti, Leonardo Tonelli, Federico Giorgi
+
++200
+
+52% of Italians
+is not satisfied with the NHS
+Need to ease pressure through:
+accurate information
+prevention strategies
+reduction of inequalities
+
+52%
+of
+Italians
+diseases linked to
+is not satisfied
+with
+the
+NHS
+alcohol abuse
+1.3% of European GDP represented by
+social and healthcare expenses linked to
+alcohol consumption
+
+Introduction of warning labels on super alcohol bottles to raise
+awareness and provide information about the risks of alcohol
+
+The research investigates the effectiveness
+of the proposal in achieving two main goals
+
+Research
+Objectives
+
+1
+
+Improve public trust in the government
+Explore the relationship between consumer
+behavior and the role of the state in
+protecting public health
+
+2
+
+Reduce alcohol consumption
+Examine the effects of these interventions across
+various demographic groups in Italy, such as age,
+gender, and socioeconomic status
+
+Experimental design
+Experiment will include supermarkets
+in several italian big cities
+Randomized Control Trial:
+treatment: introduction of
+warning labels
+control: no warning labels
+Duration: 1 year
+
+Model 1: Citizen Satisfaction
+
+dependent variable = citizen satisfaction score
+target variable = 1 for individuals in target group and 0 for individuals in the control group
+interaction term between treatment αi and control variable
+
++
+
+control variables that account for individual demographics and experience
+
+Model 2: Purchase of Super Alcohol
+
+dependent variable = comulative super alcohol purchase per individual
+target variable = 1 for individuals in target group and 0 for individuals in the control group
+interaction term between treatment αi and control variable
+
++
+
+control variables that account for individual demographics and experience
+
+Data Collection
+Data will be collected from fidelity card system and targeted surveys
+Surveys will be administered both online and in-store at individuals in both groups
+
+PRIMARY DATA
+Customer Satisfaction Score
+Calculated from responses to a survey
+Questions will evaluate:
+Overall Satisfaction
+Expectancy Disconfirmation
+Comparison to an Ideal
+Purchase
+Treatment Indicator
+Region
+
+Demographic Controls
+Age bins, Gender, Education level,
+Nationality, Smoking habits, Ethnicity,
+Income
+Additional Controls
+Political participation, Political
+association, Public health usage,
+Preference for public or private service,
+Informedness on political issue
+
+Evaluation of Results
+1
+
+Estimation of the model through OLS
+
+2
+
+Evaluation of significance of the model through an F-test
+
+3
+
+Evaluation of significance of the treatment variable through a t-test
+Interpretation of coefficient as average change in alcohol spending/ citizen
+satisfaction when moving from control to treatment
+
+4
+
+Activation of interaction terms and evaluation of significance through t-test
+Interpretation of coefficient as the additional marginal effect of the treatment on the
+selected sub-group
+
+Expected main positive drivers for Citizen
+Satisfaction and Alcohol Consumption
+
+Age: higher responsiveness for
+young adults
+Higher education level
+Higher Income
+Regional differences
+Non-smokers
+
+Expectations
+
+Implications
+
+Drawbacks
+
+Improved public trust, which may foster
+cooperation on other health-related
+policies
+Healthier population, which is could lower
+healthcare costs and improve service
+deliver
+
+Follwing steps
+
+Negative impact on firms
+Possible economic bonuses
+Long-term effects on NHS may take time
+Cultural resistance could limit the success
+of the experiment
+
+Sustained communication and transparency to maintain
+satisfaction
+Targeted campaign, based on the results of the interaction
+terms
+Combined approach, in case of positive results on
+consumption reduction, but negative on satisfaction
+
+Share you opinion about this policy!
+
+THANK
+YOU!
+
+

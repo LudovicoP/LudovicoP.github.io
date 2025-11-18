@@ -1,0 +1,751 @@
+Unveiling the Link Between Advertising Spending and
+Market valuation
+Filippo Grandoni - 3187864 - filippo.grandoni@studbocconi.it
+Ludovico Panariello - 3192212 - ludovico.panariello@studbocconi.it
+Alice Finotti - 3219579 - alice.finotti@studbocconi.it
+Leonardo Tonelli - 3216378 - leonardo.tonelli@studbocconi.it
+Federico Giorgi - 3197626 - federico.giorgi@studbocconi.it
+
+Abstract
+This paper investigates the determinants of market valuation in the healthcare sector, focusing on the role of advertising as a key driver.
+Using a panel dataset of 1,971 firms from 1994 to 2019, we apply econometric models, including Fixed Effects and Random Effects, to
+explore the relationships between market valuation and advertising intensity, controlling for R&D expenditure, and other firm-specific
+and market-level factors. Our findings suggest that advertising positively influences market valuation in the healthcare sector, while
+market growth plays an opposing role. The study provides actionable insights for healthcare managers in facing marketing strategies and
+advertising expenditures effectively.
+
+Contents
+Motivation and Objective
+Data description
+Variable Construction
+Descriptive Statistics and Trends
+Focal Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Market Analysis Metrics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Model Developement
+Econometric approach
+Random Effects v. Fixed Effects . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Significance Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Model Results and Interpretation
+Model fit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Explanatory variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Interaction Effect & Margins Plots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Robustness checks
+Managerial Implications
+Conclusion
+Appendix
+
+2
+2
+2
+3
+3
+3
+3
+4
+4
+5
+5
+5
+5
+5
+6
+6
+6
+7
+
+Motivation and Objective
+When it comes to resource allocations, all firms face a strategic trade-off between value creation, including innovating,
+producing, and delivering products, and value appropriation, which involves extracting profits through competitive
+barriers. Traditionally, healthcare firms have been believed to be primarily driven by innovation and research, with
+marketing playing a secondary role. Recent trends reflect this belief, showing a decline in marketing budgets within the
+industry. For instance, the MM+M/Swoop 2023 Healthcare Marketers Survey reported an 8% reduction in average marketing
+budgets, decreasing from $8.3 million in 2022 to $7.6 million in 2023.
+Despite this trend, there is evidence that advertising can play a crucial role in the success of healthcare firms. A study
+published in BMC Health Services Research (2020) demonstrates the positive impact of advertising on patient engagement
+and communication, emphasizing its potential to drive business performance.
+Adding to the complexity, regulatory environments for healthcare advertising show significant differences between
+regions. In the United States, direct-to-consumer advertising for prescription drugs is permitted, while it is strictly
+prohibited in Europe. The lack of regulatory uniformity poses unique challenges for pharmaceutical companies,
+influencing how firms allocate marketing budgets and communicate value to both consumers and investors.
+This divergence becomes especially important when considering how advertising can be linked to a company’s market
+valuation. Research has shown positive stock market reactions when firms increase their focus on value appropriation
+relative to value creation. Trading Off Between Value Creation and Value Appropriation: The Financial Implications of Shifts in
+Strategic Emphasis, Natalie Mizik and Robert Jacobson (2003), highlights how a shift toward value appropriation ensures that
+firms capitalize on the full potential of their innovations, which creates investor confidence.
+Therefore, the aim of our study is to investigate the determinants of market valuation in the healthcare sector, with a
+particular focus on the role of advertising as a key driver. To capture these relationships, we use econometric models,
+including Fixed Effects (FE), Random Effects (RE), and interaction terms, ensuring a robust and detailed empirical
+analysis.
+
+Data description
+The dataset analyzed (Marketing Insights) contains panel data describing financial characteristics and the competitive
+environment for 1,971 firms across various business sectors. It spans the years 1994 to 2019, with records varying in
+number and duration for each firm. In total, the dataset includes 16,347 observations and 19 variables: Firm id, Year,
+Firm Total Assets, Long-term Debt, Earnings, Cash Flows, Sales, Market Valuation, Firm Value, Advertising Expenditure, R&D
+Expenditure, Marketing, Selling, and Operating Expenditure, Product Market Threat, Product Similarity, CMO Presence, Firm
+Age, 2001 Recession, 2008 Recession, and Business Sector.
+Among these, Firm id is a label variable, CMO Presence, 2001 Recession, and 2008 Recession are dummy variables, and
+Business Sector is categorical. All other variables are numeric. Notably, the dataset contains no missing values.
+
+Variable Construction
+Our analysis focuses on the Healthcare sector (sector = 5), which aligns with the scope of our research. In this sector,
+the dataset includes data for 352 firms, totaling 2,477 observations. Starting from the given dataset, we have derived
+additional variables to obtain richer insights. Specifically:
+• ROAi,t : Return on Assets measures operational efficiency. A higher ROA suggests a more efficient use of assets
+and typically correlates with strong management practices and competitive advantages.
+ROAi, t =
+
+EBIDTAi, t
+Assetsi,t
+
+• MrktSizet : Market Size captures the total volume of the market, providing an indication of the market’s scale and
+opportunities. Larger markets typically offer greater potential for revenue growth and economies of scale.
+352
+
+Market Sizet = ∑ Salesi,t
+i =1
+
+• MrktGrowtht : Market Growth measures the annual growth rate of the total sales within the sector. It reflects the
+sector’s growth opportunities, which can influence firm valuation. Higher market growth generally indicates
+favorable conditions for firms to increase sales and profitability.
+Market Growtht = log(Market Sizet ) − log(Market Sizet−1 )
+• MrktTurbt : Market turbulence represents the volatility and unpredictability in the market, which can influence
+firm performance and valuation. A higher turbulence may necessitate adaptive strategies and increased marketing
+or R&D expenditures.
+SD (3 year Sales)t
+Market Turbulencet =
+Mean(3 year Sales)t
+2
+
+• HHIt : HHI measures market concentration and is calculated as the sum of the squared market shares of all firms
+within the market, where market share = (sales) / (total sales of the year). It indicates the level of competition,
+where higher values signify greater market concentration and lower competition.
+HHIt = (s1,t )2 + (s2,t )2 + (s3,t )2 + . . . + (sn,t )2
+
+Descriptive Statistics and Trends
+To understand the data structure, we explored key variables, including our focal variables, Market Valuation and
+Advertising Expenditure, alongside derived market measures: Market Size, Market Growth, HHI, Market Turbulence, Sectorlevel Advertising Expenditure, and Sector-level R&D Expenditure. The inclusion of derived variables enriches our analysis,
+providing valuable insights into the Healthcare sector’s structural evolution.
+To provide a clear understanding of the data, we computed descriptive statistics and plotted the variables to visualize
+trends over time - presented in Table 1, Figure 1, Figure 2, Figure 3, Figure 4, Figure 5, Figure 6. This analysis led to the
+following insights:
+
+Focal Variables
+Market Valuation: Mean of $7,759.4 million with a high standard deviation of $32,117.9 million, reflecting significant
+disparities between data points. Skewness (6.2) and kurtosis (45.1) highlight outliers with exceptionally high valuations.
+Average Market Valuation declined between 1995 and 2010, followed by significant growth through 2019. To account
+for the presence of outliers, the median was also plotted, revealing significant fluctuations accompanied by an overall
+increasing trend from the late 1990s to 2010.
+Advertising Expenditure: High variability (mean: $78.5 million, standard deviation: $382.2 million) and skewness (6.4),
+indicating a few data points with disproportionately high advertising spending. Sector-level Advertising Expenditure,
+which corresponds to average advertising expenditure, has declined steadily since 1995 and stabilized at lower levels
+post-2010. The median analysis revealed a significant drop after 1995, followed by a fluctuating pattern remaining
+approximately between 0.7 and 1.7.
+
+Market Analysis Metrics
+Market Size and Market Growth: Market Size has a mean of $209,160.9 million and a standard deviation of $68,052.7
+million, indicating substantial variability over time. Market Growth has an average of 0.1, with occasional extreme periods
+of growth or contraction (kurtosis: 25.7). Over time, Market Size exhibits consistent growth, particularly from 2005
+onward, reflecting an expanding sector. However, Market Growth remains volatile.
+Sector-level Advertising and R&D Expenditure: Sector-level Advertising Expenditure has a mean of $78.5 million with
+moderate variability (std: $24.3 million), while Sector-level R&D Expenditure is higher on average ($284.3 million) and
+shows more variability (std: $103.3 million). Advertising spending is more heavily skewed (skewness: 3.2) compared
+to R&D (skewness: 1.3). Contrary to advertising expenditure, Sector-level R&D Expenditure has grown consistently,
+particularly after 2010. This reflects a shift in resource allocation, with firms focusing less on traditional advertising
+strategies and increasing investments in innovation and development.
+Herfindahl-Hirschman Index (HHI) and Market Turbulence: The HHI has a mean of 0.2 and low variability (std: 0.1),
+with rare instances of high concentration (skewness: 2.3, kurtosis: 8.8), indicating a generally competitive market but
+occasional dominance by a few firms. From the plot, we observe a significant decline in HHI from 1995 (~0.28) to 2010
+(~0.125), indicating a shift from a moderately concentrated market to a more competitive and fragmented one. Market
+Turbulence has a mean of 0.1 with low variability (std: 0.1) and occasional extreme spikes (skewness: 3.2, kurtosis: 25.7),
+reflecting periods of instability in the market. Turbulence dropped in the late 1990s and again in 2006. Later, it followed
+a fluctuating trend, indicating instability, while maintaining moderate levels (around 0.5).
+
+Model Developement
+The Dependent Variable is log(MktVali,t ), as Market Valuation offers a comprehensive assessment of firm performance,
+incorporating investor expectations regarding profitability, growth potential, and associated risks. This variable is
+particularly pertinent in the healthcare sector, where firms face significant challenges related to R&D investments,
+regulatory compliance, and competitive intensity. We used the log value for estimation smoothness. To account for the
+heterogeneity, we will include an extensive dataset of explanatory and control variables. The inclusion of controls
+ensures that other key factors influencing market value are accounted for, enhancing the credibility and relevance of our
+findings.
+Target Variable:
+adi,t
+• salesi,t
+: Advertising Intensity Expenditure is a critical component of a firm’s brand-building strategy, enhancing
+consumer awareness and brand loyalty. The intensity is employed to eliminate potential alternative explanations
+
+3
+
+related to firm size, as larger firms may have higher advertising expenditures and better performance driven by
+economies of scale. We expect this coefficient to be positive (+) since higher advertising intensity likely increases
+consumer awareness and brand loyalty, which enhances firm valuation by signaling market strength.
+Firm level Control Variables:
+r&di,t
+: R&D Intensity Expenditure is a key determinant of innovation, signaling a firm’s commitment to competitive
+• salesi,t
+positioning, which is expected to drive long-term growth and positively (+) influence market valuation.
+• CMOi,t : the presence of a Chief Marketing Officer reflects the strategic emphasis on marketing within the firm.
+Research indicates that firms with a CMO exhibit superior performance in market valuation (+) due to enhanced
+strategic marketing capabilities and brand differentiation.
+• ROAi,t : Higher Return on Assets, as previously introduced, indicates better profitability and operational efficiency,
+all of which positively (+) influence market valuation.
+• Assetsi,t : Firm Total Assets serve as a proxy for firm size, providing insights into the firm’s scale and resource
+base. Larger firms often benefit from economies of scale, improved market power, and greater stability, all of which
+positively (+) influence market valuation.
+• threati,t : Product Market Threat reflects the intensity of competition within the market. Increased competition
+likely erodes profit margins and necessitate increased marketing and R&D efforts, negatively (−) impacting market
+valuation.
+
+Sector level Control Variables:
+• HealthS&P500t : the annual return on the S&P 500 Health Care Sector index serves as a proxy for sector-level
+performance. We expect this coefficient to be positive (+) since a strong performance of the sector reflects favorable
+macroeconomic conditions, positively influencing firm valuation.
+• HHIt : HHI, as previously introduced, can negatively (−) impact market valuation if excessive market concentration
+leads to regulatory scrutiny and reduced innovation.
+• MktGrowtht : Market Growth, as previously introduced, should positively (+) influence market valuation since a
+growing market offers more opportunities for revenue and profit expansion.
+• MktSizet : Market Size, as previously introduced, should positively (+) influence market valuation since larger
+market size reflects a more substantial opportunity base and better growth prospects, both of which are attractive to
+investors.
+• MktTurbt : Market Turbulence, as previously introduced, can positively impact valuation (+) by creating opportunities for agile firms to gain competitive advantage and capitalize on market shifts.
+Multicollinearity: to ensure the integrity of the model and address potential issues of multicollinearity among the
+predictor variables, we plotted a correlation matrix (Figure 7). The matrix shows no problematic correlations among
+most variables, confirming that our variable selection is appropriate. While there is a strong negative correlation
+between HHI and market size, this is expected due to the way HHI is derived, as larger markets typically have lower
+concentration levels.
+Interaction Term: we included in the analysis an interaction term to capture non-linear dynamics. Additionally, interaction term mitigates omitted variable bias by explicitly modeling how relationships between predictors and
+outcomes vary under different conditions. This improves the robustness of estimates and provides firms with insights to
+balance short-term and long-term goals effectively.
+
+
+adi,t
+× MktGrowtht : the interaction between Advertising Expenditure and Market Growth term examines how
+• salesi,t
+the intensity of a firm’s advertising efforts interacts with the growth rate of the market. This approach highlights
+potential synergies or trade-offs between strategies, enabling firms to optimize resource allocation. However, we
+expect this coefficient to be negative since in rapidly growing markets, demand often increases organically, reducing
+the marginal effectiveness of additional advertising. Firms may already benefit from market expansion without
+needing to heavily advertise.
+
+Econometric approach
+Random Effects v. Fixed Effects
+A key concern is the presence of unobserved, time-invariant company-specific characteristics - such as brand reputation,
+managerial efficiency, or market positioning - that may influence both advertising spending and market value, potentially
+biasing our estimates.
+To address this, we estimate a Fixed Effects (FE) model, which controls for unobserved heterogeneity by including
+company-specific intercepts. This approach focuses on within-company variation over time, isolating how changes in
+advertising spending affect market value while holding constant time-invariant factors. FE is particularly suitable if
+company-specific factors are correlated with advertising spending, as theoretical reasoning suggests.
+We avoid year-specific dummy variables, assuming that the average returns of the S&P 500 Health Care Sector sufficiently
+4
+
+capture year effects. In the literature, S&P 500 returns are widely used to control for market effects, including
+macroeconomic changes, shifts in investor sentiment, and large-scale events.
+We also estimate a Random Effects (RE) model, which assumes that unobserved company-specific effects are random
+and uncorrelated with the predictors. RE leverages both within- and between-company variation for more efficient
+estimates, provided the no-correlation assumption holds. To validate this, we conduct a Hausman test, which compares
+the FE and RE models. A rejection of the null hypothesis suggests the RE assumptions do not hold, favouring FE. If the
+test fails to reject the null, the RE model is preferred for its efficiency and generalizability.
+After testing (as reported in Table 2), the Hausman test yielded a p-value smaller than 0.001, indicating that the FE model
+is preferred. Additional robustness tests across different specifications further confirmed the decision. The FE model
+specification, including the dependent variable, independent variables, and controls, is as outlined in previous sections.
+adi,t
+salesi,t
+r&di,t
++ β2
++ β 3 CMOi,t + β 4 ROAi,t + β 6 Assetsi,t + β 7 threati,t
+salesi,t
+
+log(MktVali,t ) = β 0 + β 1
+
+(1)
+(2)
+
++ β 8 HealthS&P500t + β 9 HHIt + β 10 MktGrowtht + β 11 MktSizet + β 12 MktTurbt
+
+
+adi,t
++ β 13
+× MktGrowtht
+salesi,t
++ γi + ϵi,t
+
+(3)
+(4)
+(5)
+
+Where γi represents firm-specific fixed effects.
+
+Significance Evaluation
+Once estimated the FE model, we begin by evaluating the regression results using the F-test, which assesses the
+overall significance of the model. The F-test determines whether at least one predictor significantly affects the
+dependent variable. A p-value close to zero, as in our model, indicates that the hypothesis of all coefficients to be zero
+simultaneously is rejected.
+Following the F-test, we evaluate individual predictors using t-tests, which examine whether each estimated coefficient
+differs significantly from zero. Both the target independent variable and the interaction term yield p-values below 0.05,
+allowing us to confidently reject the null hypothesis at a confidence level of 5% and conclude their statistical significance.
+This approach first establishes the overall relevance of the model through the F-test and then examines the contribution
+of individual variables using t-tests, ensuring a thorough and structured interpretation of the results.
+
+Model Results and Interpretation
+Model fit
+From the results Table 3 we can observe an R-squared of 0.45. This indicates that 45% of the variability in the dependent
+variable (log of market value) is explained by the independent variables and the model’s specifications. This suggests
+that the model does a good job of capturing the key factors influencing market value. The high R-squared value implies
+a good fit, leaving only 55% of the variation unexplained. However, while this is a good result, it is important to note
+that there may still be unobserved factors influencing market value that the model does not account for.
+
+Explanatory variables
+Our model is a log-level model, where we applied a logarithmic transformation only to the dependent variable,
+and scaled advertisement spending by the sales of the company, therefore our target coefficient cannot be directly
+interpreted as the elasticity. The Fixed Effects (FE) estimated coefficient (extensively shown in Table 4) for advertisement
+spending is 0.71, which implies that a 1-unit increase in advertisement spending-to-sales ratio is associated with a
+71% increase in the market value of the firm, holding other factors constant. More clearly, a 0.1-unit increase in the
+advertisement spending-to-sales ratio is associated with an approximate 7.1% increase in the market valuation of the firm,
+holding other factors constant. This positive relationship suggests that higher advertisement spending to sales ratio
+is linked to an increase in market value, potentially indicating a beneficial effect of advertising on firm performance.
+However, it is worth mentioning that the comparative statements are valid only when market growth is zero, because
+∂ log(MktVali,t )
+! = β 1 + β 13 × MktGrowtht .
+adi,t
+∂
+salesi,t
+
+Interaction Effect & Margins Plots
+The coefficient for the interaction term between the advertising-to-sales ratio and market growth is -3.04, indicating that
+as market growth increases, the marginal effect of advertising on market value decreases. Specifically, a one-unit
+5
+
+increase in market growth reduces the marginal effect of advertising by 3.04 units, suggesting that advertising becomes
+less effective in high-growth markets.
+To explore this relationship, we use marginal plots to visualize how the effect of advertising varies with market growth
+(Figure 8). The plot reveals a clear downward trend, showing that as market growth rises, the impact of advertisement
+spending diminishes. This provides an intuitive, visual interpretation of the interaction term, illustrating the nuanced
+relationship between advertising effectiveness and market growth levels.
+
+Robustness checks
+To assess the robustness of our findings, we conducted a sensitivity analysis by re-estimating the model while excluding
+the interaction term. The results, presented in Table 5, reveal that even without the inclusion of the interaction term, the
+coefficients for our target variable remain statistically significant, and their signs are consistent with the original model.
+This consistency in both the magnitude and direction of the coefficients provides strong evidence that our main results
+are not driven by the interaction effect, further confirming the robustness and reliability of our findings. These results
+suggest that our conclusions hold under various model specifications, reinforcing the validity of our analysis.
+
+Managerial Implications
+The findings of this study provide compelling managerial insights for firms operating in the healthcare sector, where
+market dynamics are influenced by innovation, regulatory requirements, and brand perception.
+Firstly, the positive and significant impact of current advertising expenditure on market value highlights the pivotal
+role of advertising campaigns. This result underscores the dual function of advertising: enhancing consumer trust in the
+firm’s offerings and signaling financial strength to investors, as supported by Joshi and Hanssens (2010), divide in direct
+and indirect effect according to their findings. For healthcare firms, effective advertising can communicate complex
+product benefits and the firm’s commitment to innovation and patient welfare. To maximize returns, managers should
+prioritize evidence-based advertising strategies that resonate with both consumers and institutional stakeholders.
+Secondly, from the regression the presence of a Chief Marketing Officer (CMO) emerges as a key driver of firm value,
+reflecting the importance of marketing leadership in aligning advertising initiatives with organizational objectives. As
+Germann, Ebbes, and Grewal (2015) argue, a CMO’s strategic oversight can integrate marketing with broader corporate
+goals, ensuring that resources are deployed efficiently. In the healthcare sector, where product differentiation often hinges
+on trust and efficacy, firms without a dedicated CMO should consider creating such a role to enhance marketing impact
+and align campaigns with patient-centric messaging. This proves how CEOs should give credit to CMO figures, and it
+hasn’t happened properly lately. According to a report from Insider, only a third of CEOs trust CMOs to grow business:
+this study implies that CMO has an actual impact on the value of the firm and managers should take into account it.
+Thirdly, the regression reveals the significant contribution of current research and development expenditure to market
+value, highlighting the critical role of innovation in the healthcare industry. Chauvin and Hirschey (1993) showed that
+R&D fosters innovation, creating intangible assets that drive long-term firm value. Healthcare firms, in particular,
+rely on constant innovation to address rapid technological changes and meet evolving regulatory standards. Managers
+should adopt a balanced resource allocation approach, viewing advertising and R&D not as competing investments
+but as complementary mechanisms for driving growth. For instance, leveraging R&D advancements in marketing
+campaigns can amplify their market impact, aligning the firm’s innovative capabilities with its brand narrative.
+Subsequently, managers need to consider the interaction between advertising and market growth. The diminishing
+effect on advertising of market growth highlights that managers have to carefully allocate advertising budgets, considering
+market trends. Lastly, the healthcare context presents unique challenges that managers must navigate. Regulatory
+constraints and ethical considerations require advertising to be both accurate and patient-focused.
+Additionally, cultural factors may influence consumer responses to advertising, necessitating a localized approach to
+campaign design. Managers must also recognize that the impact of these investments may take time to materialize.
+
+Conclusion
+In conclusion, this study emphasizes the importance of integrating marketing and advertising into a cohesive strategy
+to maximize firm value in the healthcare sector. By leveraging advertising expenditure (and additionally R&D) and
+ensuring strategic oversight through a dedicated CMO, firms can establish a competitive advantage while delivering
+measurable financial outcomes - enhancing market value. These insights provide a road-map for managers to navigate
+the complexities of the healthcare market, ensuring that their investments contribute to both immediate success and
+sustained growth, increasing the firm value.
+
+6
+
+Appendix
+Mean
+Standard Deviation
+Min
+Max
+Median
+Skewness
+Kurtosis
+25th Percentile
+50th Percentile (Median)
+75th Percentile
+
+Mrkt Val
+7759.4
+32117.9
+2.5
+384003.8
+272.8
+6.2
+45.1
+75.2
+272.8
+1133.6
+
+Adv. Exp.
+78.5
+382.2
+0
+4000
+1.2
+6.4
+43.9
+0.3
+1.2
+6.2
+
+Mrkt Size
+209160.9
+68052.7
+15487.9
+326519.7
+206009.2
+-0.4
+0.2
+190662.9
+206009.2
+244122.5
+
+Mrkt Growth
+0.1
+0.1
+-0.2
+1.1
+0.1
+3.2
+25.7
+0
+0.1
+0.1
+
+Mrkt Turbulence
+0.1
+0.1
+0
+0.4
+0.1
+2.3
+8.8
+0.1
+0.1
+0.1
+
+HHI
+0.2
+0.1
+0
+0.6
+0.2
+3.8
+25.1
+0.2
+0.2
+0.2
+
+Sector-level Advertising Exp.
+78.5
+24.3
+57.9
+245.1
+72.5
+3.2
+14.4
+72.5
+72.5
+81
+
+Sector-level R&D Exp.
+284.3
+103.3
+73.1
+542.8
+244.1
+1.3
+0.9
+207.2
+244.1
+312.6
+
+Table 1: Descriptive Statistics for Key Metrics
+
+Figure 1: Average Market Valuation and Advertising Expenditure
+
+Figure 2: Median Market Valuation
+
+Table 2: Hausman Test Results in Different Scenarios for Robustness Check
+
+Scenario
+No Interaction No Lags
+No Interaction With Lags
+With Interaction No Lags
+With Interaction With Lags
+
+Test Statistic
+
+P-Value
+
+90.80
+78.06
+96.01
+65.67
+
+3.44e-14
+9.62e-12
+9.76e-15
+4.96e-09
+
+Lags: Using 1-year lagged advertisement instead of current.
+
+7
+
+Figure 3: Median Advertising Expenditure
+
+Figure 4: Market Size and Growth
+
+Figure 5: HHI and Market Turbulence
+
+Figure 6: Sector Adv & R&D expenditures
+
+8
+
+Figure 7: Correlation Matrix
+
+Figure 8: Margin plot for Market Growth interaction
+
+9
+
+Table 3: Fixed Effects Estimation Overview
+
+Dep. Variable
+Estimator
+No. Observations
+Entities
+Time periods
+R-squared
+Log-likelihood
+F-statistic
+P-value
+
+log_mv
+Fixed Effects
+2123
+308
+25
+0.4527
+-1511.3
+143.56
+0.0000
+
+Table 4: Parameter Estimates
+
+Parameter
+const
+ad_norm_current:market_growth
+ad_norm_current
+rd_norm_current
+ROA
+HHI
+log_assets
+S&P 500 Health Care Sector
+CMO
+threat
+market_turbulence
+market_growth
+total_sales_sector
+
+Estimate
+2.9674
+-3.0416
+0.7189
+0.0448
+0.5190
+-3.2382
+0.7408
+2.142e-06
+0.0748
+-0.0033
+-0.1348
+0.2986
+-3.258e-06
+
+Std. Err.
+0.2723
+1.3589
+0.1514
+0.0252
+0.0789
+0.6818
+0.0267
+3.868e-07
+0.0398
+0.0075
+0.3165
+0.1790
+6.689e-07
+
+T-stat
+10.899
+-2.2383
+4.7494
+1.7800
+6.5760
+-4.7492
+27.779
+5.5383
+1.8776
+-0.4332
+-0.4258
+1.6682
+-4.8717
+
+P-value
+0.0000
+0.0253
+0.0000
+0.0752
+0.0000
+0.0000
+0.0000
+0.0000
+0.0606
+0.6649
+0.6703
+0.0955
+0.0000
+
+Lower CI
+2.4334
+-5.7067
+0.4220
+-0.0046
+0.3642
+-4.5755
+0.6885
+1.383e-06
+-0.0033
+-0.0180
+-0.7554
+-0.0525
+-4.57e-06
+
+Table 5: Model Comparison
+
+Dep. Variable
+Estimator
+No. Observations
+Cov. Est.
+R-squared
+F-statistic
+P-value (F-stat)
+const
+ad_norm_current
+rd_norm_current
+ROA
+HHI
+log_assets
+S&P 500 Health Care Sector
+CMO
+threat
+market_turbulence
+market_growth
+total_sales_sector
+ad_norm_current:market_growth
+
+NoInteraction
+log_mv
+FE
+2113
+Unadjusted
+0.4511
+134.05
+0.0000
+2.9671**
+0.6076**
+0.0485
+0.5350**
+-3.2816**
+0.7404**
+0.000002**
+0.0745*
+-0.0029
+-0.1340
+0.1874
+-0.000003**
+
+Significance levels: * p < 0.1, * p < 0.05, ** p < 0.01
+
+10
+
+WithInteraction
+log_mv
+FE
+2113
+Unadjusted
+0.4527
+123.57
+0.0000
+2.9674**
+0.7189**
+0.0448
+0.5190**
+-3.2382**
+0.7408**
+0.000002**
+0.0748*
+-0.0033
+-0.1348
+0.2986*
+-0.000003**
+-3.0416**
+
+Upper CI
+3.5014
+-0.3764
+1.0158
+0.0942
+0.6738
+-1.9009
+0.7932
+2.901e-06
+0.1529
+0.0115
+0.4859
+0.6496
+-1.947e-06
+
+References
+[1] Chauvin, K. W., & Hirschey, M. (1993). Advertising, R&D Expenditures and the Market Value of the Firm. Financial
+Management, 22(4), 128–140.
+[2] Germann, F., Ebbes, P., & Grewal, R. (2015). The Chief Marketing Officer Matters! Journal of Marketing, 79(3), 1–22.
+[3] Joshi, A., & Hanssens, D. M. (2010). The Direct and Indirect Effects of Advertising Spending on Firm Value. Journal of
+Marketing, 74(1), 20–33.
+[4] Katsikeas, C. S., Morgan, N. A., Leonidou, L. C., & Hult, G. T. M. (2016). Assessing Performance Outcomes in
+Marketing. Journal of Marketing, 80(2), 1–20.
+[5] McAlister, L., Srinivasan, R., & Kim, M. (2016). Advertising, Research and Development, and Systematic Risk of the
+Firm. Journal of Marketing, 80(1), 79–96.
+[6] Healthcare Marketers Trend Report 2023: A Trim Off the Top. Available at: https://www.mmm-online.com/home/channel/
+features/healthcare-marketers-trend-report-2023-a-trim-off-the-top/?utm_source=chatgpt.com
+(Accessed: December 2024).
+[7] Mishra, P., Gupta, S., & Singh, A. (2020). The role of advertising in patient engagement and communication: Evidence from healthcare organizations. BMC Health Services Research, 20, Article No. 559. Available at: https://
+bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05599-3?utm_source=chatgpt.com (Accessed: December 2024).
+[8] Mizik, N., & Jacobson, R. (2003). Trading Off Between Value Creation and Value Appropriation: The Financial
+Implications of Shifts in Strategic Emphasis. Journal of Marketing, 67(1), 63–76.
+
+11
+
+

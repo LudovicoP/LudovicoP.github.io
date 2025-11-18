@@ -1,0 +1,18 @@
+current directory: /Users/ludovicopanariello/GitHub/LudovicoP.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/ludovicopanariello/GitHub/LudovicoP.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251118-71266-j1ri5x sitelibdir\=./.gem.20251118-71266-j1ri5x clean
+
+current directory: /Users/ludovicopanariello/GitHub/LudovicoP.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251118-71266-j1ri5x sitelibdir\=./.gem.20251118-71266-j1ri5x
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/ludovicopanariello/GitHub/LudovicoP.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251118-71266-j1ri5x sitelibdir\=./.gem.20251118-71266-j1ri5x install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20251118-71266-j1ri5x/racc
+
+current directory: /Users/ludovicopanariello/GitHub/LudovicoP.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251118-71266-j1ri5x sitelibdir\=./.gem.20251118-71266-j1ri5x clean
