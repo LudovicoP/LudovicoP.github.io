@@ -9,7 +9,7 @@ redirect_from:
 
 ![martingale](/images/martingales.jpg){: .align-right width="300px"}
 
-Postgraduate student in Statistical Finance (Imperial College). Passionate about Bayesian inference, forecasting and applied ML.
+I’m a postgraduate student in Statistical Finance at Imperial College London. I build reproducible data‑science solutions that apply Bayesian inference and probabilistic modelling to real‑world problems. Combining research experience at Bocconi/BIDSA, leadership of the BSI tech division, and industry practice (RCS MediaGroup), I focus on interpretable, production‑ready workflows using Python, Stan, and modern ML tooling.
 
 ---
 
