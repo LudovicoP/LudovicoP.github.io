@@ -43,6 +43,9 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
+      {% comment %} Link to CV page for easy access in sidebar {% endcomment %}
+      <li><a href="/cv/"><i class="fas fa-fw fa-file icon-pad-right" aria-hidden="true"></i>CV</a></li>
+      
       <!-- There shoulnd't be linkedin here -->
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>

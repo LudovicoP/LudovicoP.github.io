@@ -1,7 +1,6 @@
 ---
----
-title: "Credit Scoring: ML Approach"
-excerpt: "XGBoost-based credit scoring with PCA and fairness checks (ROC AUC ≈ 0.86)."
+title: "Credit Scoring (XGBoost & Fairness)"
+excerpt: "XGBoost credit scoring pipeline with PCA and fairness checks (ROC AUC ≈ 0.86)."
 collection: portfolio
 ---
 

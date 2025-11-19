@@ -1,6 +1,6 @@
 ---
-title: "Solow–Swan Model Assignment"
-excerpt: "Country-level Solow–Swan regressions, outlier analysis and robustness checks."
+title: "Solow–Swan Growth Model Analysis"
+excerpt: "Country-level Solow–Swan regressions with diagnostics and robustness checks."
 collection: portfolio
 ---
 

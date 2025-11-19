@@ -28,6 +28,10 @@ author:
   location         : "Milan"
   employer         : "Bocconi University"
   employer_url     : "https://www.unibocconi.it"
+  employer2        : "McCombs School (UT Austin)"
+  employer2_url    : "https://www.mccombs.utexas.edu"
+  employer3        : "Imperial College London"
+  employer3_url    : "https://www.imperial.ac.uk"
   uri              : # URL
   email            : "ludovico.panariello@studbocconi.it" 
   linkedin         : "ludovicopanariello"

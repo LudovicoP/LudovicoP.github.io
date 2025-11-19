@@ -1,6 +1,6 @@
 ---
-title: "Forecast use of a city bikeshare system"
-excerpt: "Models applied: RF, NN, ARIMA/SARIMA"
+title: "Forecasting City Bikeshare Demand"
+excerpt: "Demand forecasting for city bikeshare using RF, NN, and ARIMA/SARIMA models."
 collection: portfolio
 ---
 
