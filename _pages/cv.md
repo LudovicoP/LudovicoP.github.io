@@ -14,4 +14,3 @@ redirect_from:
     <p>Your browser does not support embedding PDFs. <a href="/pdfs/LUDOVICO%20AMEDEO%20PANARIELLO_v14_it_fin_imp_sep_github.pdf" target="_blank" rel="noopener">Open the CV PDF</a>.</p>
   </iframe>
 </div>
-Work experience

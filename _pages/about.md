@@ -9,7 +9,7 @@ redirect_from:
 
 ![martingale](/images/martingales.jpg){: .align-right width="300px"}
 
-Postgraduate student in Statistical Finance (Imperial College). I build reproducible data science and econometrics projects — with a focus on Bayesian inference, forecasting and applied ML.
+Postgraduate student in Statistical Finance (Imperial College). Passionate about Bayesian inference, forecasting and applied ML.
 
 ---
 
@@ -20,7 +20,7 @@ Postgraduate student in Statistical Finance (Imperial College). I build reproduc
 - **Airbnb Price Heterogeneity Analysis** — clustering and city-level regressions that identify listing characteristics driving price differences. [Read more →](/portfolio/portfolio-AirBnBAnalysis/)
 - **Warning Labels on Super Alcohol — Policy Experiment** — RCT design and econometric analysis of labeling interventions on alcohol consumption and satisfaction. [Read more →](/portfolio/portfolio-AlcoholLabel/)
 
----
+<!-- ---
 
 ### Experience & Roles
 
@@ -39,13 +39,14 @@ Postgraduate student in Statistical Finance (Imperial College). I build reproduc
 - Bocconi Students for Machine Learning — Analyst (Research & Development) — 09/2023 – Present
   - Developed simulation-based ML algorithms studying evolutionary dynamics and contributed to research projects.
 
----
+--- -->
 
 ### Education
 
 - Imperial College London — MSc Statistical Finance
-- The University of Texas at Austin — McCombs Exchange (01/2025 – 05/2025)
+- The University of Texas at Austin — McCombs Exchange - GPA: 4.0/4.0
 - Bocconi University — BSc in Economics, Management and Computer Science - 110 cum laude
+
 ---
 
 ### Skills & Tools

@@ -4,6 +4,16 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+{%- comment -%}
+  Ensure employer2/employer3 fall back to site.author values when not present in page-specific author data
+{%- endcomment -%}
+{% assign emp1 = author.employer | default: site.author.employer %}
+{% assign emp1_url = author.employer_url | default: site.author.employer_url %}
+{% assign emp2 = author.employer2 | default: site.author.employer2 %}
+{% assign emp2_url = author.employer2_url | default: site.author.employer2_url %}
+{% assign emp3 = author.employer3 | default: site.author.employer3 %}
+{% assign emp3_url = author.employer3_url | default: site.author.employer3_url %}
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
@@ -29,13 +39,7 @@
       {% endif %}
 
       <!-- I added the website for the institution  -->
-      {% if author.employer and author.employer_url %}
-        <li class="author__desktop">
-          <a href="{{ author.employer_url }}" target="_blank" rel="noopener">
-            <i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}
-          </a>
-        </li>
-      {% endif %}
+      {% comment %} Primary and secondary employer links (visible under avatar). Use author.employer / employer2 / employer3 from _config.yml or site.data.authors. {% endcomment %}
 
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -87,6 +91,28 @@
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
       {% endif %}      
+      
+      {% if emp3 and emp3_url %}
+        <li>
+          <a href="{{ emp3_url }}" target="_blank" rel="noopener" title="{{ emp3 }}">
+            <i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i><span class="author__small">{{ emp3 }}</span>
+          </a>
+        </li>
+      {% endif %}
+      {% if emp2 and emp2_url %}
+        <li>
+          <a href="{{ emp2_url }}" target="_blank" rel="noopener" title="{{ emp2 }}">
+            <i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i><span class="author__small">{{ emp2 }}</span>
+          </a>
+        </li>
+      {% endif %}
+      {% if emp1 and emp1_url %}
+        <li>
+          <a href="{{ emp1_url }}" target="_blank" rel="noopener" title="{{ emp1 }}">
+            <i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i><span class="author__small">{{ emp1 }}</span>
+          </a>
+        </li>
+      {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
       {% endif %}      
