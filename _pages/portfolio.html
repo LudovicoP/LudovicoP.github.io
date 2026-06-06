@@ -7,8 +7,26 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Imperial College London — MSc Statistics</h2>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% assign imperial_slugs = "LuatiHMM,PGM,CompStatsML,AppliedStats,DataScienceGPD,BigDataPySpark,AdvSimulation,StatInference" | split: "," %}
+
+{% for slug in imperial_slugs %}
+  {% for post in site.portfolio %}
+    {% if post.url contains slug %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
+<h2>Bocconi University — BSc & Research</h2>
+
+{% assign bocconi_slugs = "BayesianRacing,CreditScoring,AirBnBAnalysis,SimulatedAnnealing,ForecastBikeshare,AlcoholLabel,AdvSpending,SoloSwan,TradeOpenness" | split: "," %}
+
+{% for slug in bocconi_slugs %}
+  {% for post in site.portfolio %}
+    {% if post.url contains slug %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
